@@ -14,7 +14,7 @@ function CallMe() {
         var data = JSON.parse(this.response);
         for (var j = 0; j < data.data.length; j++){
            
-   
+            debugger;
             let question = {
                 numb:  j,
                 question:  data.data[j].Question,
