@@ -1,14 +1,14 @@
 // Function to perform login
-function login(username, password) {
+function login(email, password) {
   // Make a request to your backend server to authenticate the user
   // This could be done using fetch or XMLHttpRequest
   // Example using fetch:
-  fetch("your_backend_login_endpoint", {
+  fetch("https://optifood.directus.app/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ username: username, password: password }),
+    body: JSON.stringify({ email: email, password: password }),
   })
     .then((response) => response.json())
     .then((data) => {
@@ -28,6 +28,8 @@ function login(username, password) {
       console.error("Login failed:", error);
     });
 }
+
+console.log(login("test@test.com", "123456"));
 
 // Function to perform token refresh
 function refreshToken() {
