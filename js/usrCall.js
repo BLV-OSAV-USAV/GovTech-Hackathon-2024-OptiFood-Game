@@ -5,10 +5,9 @@ function CallUser() {
     // request.open('GET', 'https://optifood.directus.app/items/Challenges'); // 
     request.open('GET', 'https://optifood.directus.app/items/Score?fields=*.*.*.*'); 
     request.send();
-/*     request.open('GET', 'https://optifood.directus.app/items/Friend'); 
+/*  request.open('GET', 'https://optifood.directus.app/items/Friend'); 
     request.send(); */
     
-
 
     let usr_arr = []; // Initialize an empty array outside the onload function
 
@@ -41,8 +40,11 @@ function CallUser() {
     
         html += '</table>';
         
-        // Replace the inner HTML of userList with the generated HTML
+
+
+        document.getElementById('wlcUsr').innerHTML = 'Welcome back '+ '<i>' + usr_arr[0].first_name + '</i>';
         document.getElementById('ranking').innerHTML = html;
+
     };
 }
 CallUser()
