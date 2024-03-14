@@ -1,29 +1,29 @@
-Frage,A,B,C,D,Richtige Antwort
-Was ist eine Hauptquelle für Omega-3-Fettsäuren?,Olivenöl,Walnüsse,Lachs,Huhn,C
-Welches Vitamin ist hauptsächlich in Zitrusfrüchten zu finden?,Vitamin A,Vitamin B12,Vitamin C,Vitamin D,C
-"Was gilt als gesunde Menge an Wasser, die ein Erwachsener täglich trinken sollte?",1-2 Liter,2-3 Liter,3-4 Liter,5-6 Liter,B
-Welches Lebensmittel enthält am meisten Ballaststoffe?,Weißbrot,Vollkornbrot,Reis,Pasta,B
-Was ist kein Symptom von Eisenmangel?,Müdigkeit,Haarausfall,Verbesserte Wundheilung,Blässe,C
-Für welche Funktion ist Vitamin D hauptsächlich bekannt?,Stärkung des Immunsystems,Förderung der Augengesundheit,Hilfe bei der Kalziumaufnahme,Verbesserung der Gehirnfunktion,C
-Welches Lebensmittel ist eine gute Quelle für Kalzium?,Rotes Fleisch,Spinat,Butter,Käse,D
-Was beschreibt die Glykämische Last (GL) eines Lebensmittels?,Den Fettgehalt,Den Einfluss auf den Blutzuckerspiegel,Den Proteingehalt,Den Wassergehalt,B
-Was ist ein Hauptvorteil einer pflanzenbasierten Ernährung für das Tierwohl?,Erhöht den Bedarf an Tierprodukten,Verringert die Nachfrage nach Tierprodukten,Hat keinen Einfluss auf das Tierwohl,Erhöht den CO2-Fußabdruck,B
-"Welches Label kennzeichnet Fleischprodukte von Tieren, die unter artgerechteren Bedingungen aufgezogen wurden?",UTZ-zertifiziert,Fair Trade,Bio-Siegel,MSC-Siegel,C
-Was bezeichnet der Begriff 'Freilandhaltung' bei Geflügel?,Haltung in geschlossenen Ställen,Haltung in Käfigen,Zugang zu Außenbereichen,Kein Zugang zu Tageslicht,C
-Wie wirkt sich der Verzehr von Bio-Fleisch im Vergleich zu konventionellem Fleisch auf das Tierwohl aus?,Keine Auswirkungen,Schlechter für das Tierwohl,Besser für das Tierwohl,Nur der Preis ist anders,C
-Was ist ein direkter Vorteil der Weidehaltung für Kühe?,Weniger Bewegungsfreiheit,Mehr Stress,Bessere Lebensbedingungen,Höherer Antibiotikaeinsatz,C
-Was bedeutet der Begriff 'Aquakultur' in Bezug auf Fischproduktion?,Wildfang aus dem Meer,Fischfang in Flüssen,Zucht in kontrollierten Bedingungen,Freilassung gefangener Fische,C
-Welche Ernährungsform schließt jegliche Tierprodukte aus?,Vegetarismus,Pescetarismus,Flexitarismus,Veganismus,D
-Was kennzeichnet 'Massentierhaltung' im Gegensatz zu artgerechter Haltung?,Weniger Tiere pro Flächeneinheit,Hohe Bewegungsfreiheit für die Tiere,Intensive Nutzung von Antibiotika,Fokus auf tierisches Wohlbefinden,C
-Wie trägt der Kauf von lokalen Tierprodukten zum Tierwohl bei?,Erhöht den Transportstress für Tiere,Reduziert den Transportstress für Tiere,Kein Einfluss auf das Tierwohl,Erhöht die CO2-Emissionen,B
-Welcher der folgenden Faktoren wird durch den Konsum von tierischen Produkten aus Freilandhaltung im Vergleich zu Massentierhaltung nicht beeinflusst?,Tiergesundheit,Umweltverschmutzung,Antibiotikaresistenzen,Geschmack des Produkts,D
-Was ist die Hauptursache für den Verlust von Biodiversität in Bezug auf Ernährung?,Der Anbau von Bio-Lebensmitteln,Die Überfischung der Ozeane,Die Rodung von Wäldern für Landwirtschaftsflächen,Urbanisierung,C
-Welches Lebensmittel hat den höchsten Wasserverbrauch in der Produktion?,Tomaten,Rindfleisch,Kartoffeln,Äpfel,B
-Wie kann der ökologische Fußabdruck der Ernährung am effektivsten reduziert werden?,Durch den Kauf von lokal produzierten Lebensmitteln,Durch die Reduktion von Lebensmittelabfall,Durch eine vegane Ernährung,Durch den Kauf von Bio-Lebensmitteln,C
-Welche Landwirtschaftsform ist am effizientesten in Bezug auf die Flächennutzung?,Biologische Landwirtschaft,Vertikale Landwirtschaft,Permakultur,Konventionelle Landwirtschaft,B
-Welches Gas trägt am meisten zur Erderwärmung bei und wird in der Landwirtschaft in großen Mengen freigesetzt?,Kohlendioxid (CO2),Methan (CH4),Lachgas (N2O),Ozon (O3),B
-Welche Ernährungsweise hat den geringsten Wasserfußabdruck?,Fleischbasierte Ernährung,Pflanzenbasierte Ernährung,Meeresfrüchte-basierte Ernährung,Omnivore Ernährung,B
-Was ist eine direkte Folge der Übernutzung von Düngemitteln in der Landwirtschaft?,Erhöhte Bodenfruchtbarkeit,Verringerung der Biodiversität,Eutrophierung von Gewässern,Verbesserte Wasserspeicherung im Boden,C
-Welche Aussage über biologisch abbaubare Verpackungen ist wahr?,Sie tragen zur Verminderung des Treibhauseffekts bei,Sie sind immer umweltfreundlicher als Plastikverpackungen,Sie zersetzen sich in jeder Umgebung schnell und rückstandslos,Ihre Produktion kann ebenfalls Umweltprobleme verursachen,D
-Wie beeinflusst die Ernährung die globale Erwärmung?,Durch direkte Emission von Treibhausgasen aus Lebensmitteln,Durch den Transport von Lebensmitteln über lange Strecken,Durch Freisetzung von Treibhausgasen aus der Lebensmittelproduktion,Alle der obigen,D
-Was fördert die nachhaltige Fischerei?,Den Fang von Jungfischen zur Bestandserhaltung,Die Nutzung von Schleppnetzen,Die Zertifizierung von nachhaltigen Fischereipraktiken,Die unbegrenzte Nutzung von Meeresressourcen,C
+Question,answer_1,answer_2,answer_3,answer_4,corrected_answer
+Was ist eine Hauptquelle für Omega-3-Fettsäuren?,Olivenöl,Walnüsse,Lachs,Huhn,2
+Welches Vitamin ist hauptsächlich in Zitrusfrüchten zu finden?,Vitamin A,Vitamin B12,Vitamin C,Vitamin D,2
+"Was gilt als gesunde Menge an Wasser, die ein Erwachsener täglich trinken sollte?",1-2 Liter,2-3 Liter,3-4 Liter,5-6 Liter,1
+Welches Lebensmittel enthält am meisten Ballaststoffe?,Weißbrot,Vollkornbrot,Reis,Pasta,1
+Was ist kein Symptom von Eisenmangel?,Müdigkeit,Haarausfall,Verbesserte Wundheilung,Blässe,2
+Für welche Funktion ist Vitamin D hauptsächlich bekannt?,Stärkung des Immunsystems,Förderung der Augengesundheit,Hilfe bei der Kalziumaufnahme,Verbesserung der Gehirnfunktion,2
+Welches Lebensmittel ist eine gute Quelle für Kalzium?,Rotes Fleisch,Spinat,Butter,Käse,3
+Was beschreibt die Glykämische Last (GL) eines Lebensmittels?,Den Fettgehalt,Den Einfluss auf den Blutzuckerspiegel,Den Proteingehalt,Den Wassergehalt,1
+Was ist ein Hauptvorteil einer pflanzenbasierten Ernährung für das Tierwohl?,Erhöht den Bedarf an Tierprodukten,Verringert die Nachfrage nach Tierprodukten,Hat keinen Einfluss auf das Tierwohl,Erhöht den CO2-Fußabdruck,1
+"Welches Label kennzeichnet Fleischprodukte von Tieren, die unter artgerechteren Bedingungen aufgezogen wurden?",UTZ-zertifiziert,Fair Trade,Bio-Siegel,MSC-Siegel,2
+Was bezeichnet der Begriff 'Freilandhaltung' bei Geflügel?,Haltung in geschlossenen Ställen,Haltung in Käfigen,Zugang zu Außenbereichen,Kein Zugang zu Tageslicht,2
+Wie wirkt sich der Verzehr von Bio-Fleisch im Vergleich zu konventionellem Fleisch auf das Tierwohl aus?,Keine Auswirkungen,Schlechter für das Tierwohl,Besser für das Tierwohl,Nur der Preis ist anders,2
+Was ist ein direkter Vorteil der Weidehaltung für Kühe?,Weniger Bewegungsfreiheit,Mehr Stress,Bessere Lebensbedingungen,Höherer Antibiotikaeinsatz,2
+Was bedeutet der Begriff 'Aquakultur' in Bezug auf Fischproduktion?,Wildfang aus dem Meer,Fischfang in Flüssen,Zucht in kontrollierten Bedingungen,Freilassung gefangener Fische,2
+Welche Ernährungsform schließt jegliche Tierprodukte aus?,Vegetarismus,Pescetarismus,Flexitarismus,Veganismus,3
+Was kennzeichnet 'Massentierhaltung' im Gegensatz zu artgerechter Haltung?,Weniger Tiere pro Flächeneinheit,Hohe Bewegungsfreiheit für die Tiere,Intensive Nutzung von Antibiotika,Fokus auf tierisches Wohlbefinden,2
+Wie trägt der Kauf von lokalen Tierprodukten zum Tierwohl bei?,Erhöht den Transportstress für Tiere,Reduziert den Transportstress für Tiere,Kein Einfluss auf das Tierwohl,Erhöht die CO2-Emissionen,1
+Welcher der folgenden Faktoren wird durch den Konsum von tierischen Produkten aus Freilandhaltung im Vergleich zu Massentierhaltung nicht beeinflusst?,Tiergesundheit,Umweltverschmutzung,Antibiotikaresistenzen,Geschmack des Produkts,3
+Was ist die Hauptursache für den Verlust von Biodiversität in Bezug auf Ernährung?,Der Anbau von Bio-Lebensmitteln,Die Überfischung der Ozeane,Die Rodung von Wäldern für Landwirtschaftsflächen,Urbanisierung,2
+Welches Lebensmittel hat den höchsten Wasserverbrauch in der Produktion?,Tomaten,Rindfleisch,Kartoffeln,Äpfel,1
+Wie kann der ökologische Fußabdruck der Ernährung am effektivsten reduziert werden?,Durch den Kauf von lokal produzierten Lebensmitteln,Durch die Reduktion von Lebensmittelabfall,Durch eine vegane Ernährung,Durch den Kauf von Bio-Lebensmitteln,2
+Welche Landwirtschaftsform ist am effizientesten in Bezug auf die Flächennutzung?,Biologische Landwirtschaft,Vertikale Landwirtschaft,Permakultur,Konventionelle Landwirtschaft,1
+Welches Gas trägt am meisten zur Erderwärmung bei und wird in der Landwirtschaft in großen Mengen freigesetzt?,Kohlendioxid (CO2),Methan (CH4),Lachgas (N2O),Ozon (O3),1
+Welche Ernährungsweise hat den geringsten Wasserfußabdruck?,Fleischbasierte Ernährung,Pflanzenbasierte Ernährung,Meeresfrüchte-basierte Ernährung,Omnivore Ernährung,1
+Was ist eine direkte Folge der Übernutzung von Düngemitteln in der Landwirtschaft?,Erhöhte Bodenfruchtbarkeit,Verringerung der Biodiversität,Eutrophierung von Gewässern,Verbesserte Wasserspeicherung im Boden,2
+Welche Aussage über biologisch abbaubare Verpackungen ist wahr?,Sie tragen zur Verminderung des Treibhauseffekts bei,Sie sind immer umweltfreundlicher als Plastikverpackungen,Sie zersetzen sich in jeder Umgebung schnell und rückstandslos,Ihre Produktion kann ebenfalls Umweltprobleme verursachen,3
+Wie beeinflusst die Ernährung die globale Erwärmung?,Durch direkte Emission von Treibhausgasen aus Lebensmitteln,Durch den Transport von Lebensmitteln über lange Strecken,Durch Freisetzung von Treibhausgasen aus der Lebensmittelproduktion,Alle der obigen,3
+Was fördert die nachhaltige Fischerei?,Den Fang von Jungfischen zur Bestandserhaltung,Die Nutzung von Schleppnetzen,Die Zertifizierung von nachhaltigen Fischereipraktiken,Die unbegrenzte Nutzung von Meeresressourcen,2
