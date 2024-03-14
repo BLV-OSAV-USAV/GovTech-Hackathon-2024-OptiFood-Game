@@ -29,7 +29,6 @@ function CallUser() {
 
         }
         usr_arr2 =[];
-        debugger;
         for (var user in usr_arr) {
             usr_arr2.push(usr_arr[user]);
         };
@@ -58,4 +57,11 @@ function CallUser() {
 
     };
 }
-CallUser()
+
+
+userID = getUserData();
+if(userID!=false){
+    CallUser()
+}else{
+    window.location="login.html"
+}

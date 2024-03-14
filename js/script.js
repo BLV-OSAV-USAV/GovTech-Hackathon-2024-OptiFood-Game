@@ -10,8 +10,16 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 // if startQuiz button clicked
-start_btn.onclick = ()=>{
+
+function startGame(){
     info_box.classList.add("activeInfo"); //show info box
+    info_box.classList.remove("activeInfo"); //hide info box
+    quiz_box.classList.add("activeQuiz"); //show quiz box
+    showQuetions(0); //calling showQestions function
+    queCounter(1); //passing 1 parameter to queCounter
+    startTimer(15); //calling startTimer function
+    startTimerLine(0); //calling startTimerLine function
+
 }
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{

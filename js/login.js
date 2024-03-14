@@ -3,7 +3,6 @@ async function login() {
     // Make a request to your backend server to authenticate the user
     // This could be done using fetch or XMLHttpRequest
     // Example using fetch:
-    debugger;
     email= document.getElementById("loginUsername").value;
     password= document.getElementById("loginPassword").value;
     const url = 'https://optifood.directus.app/auth/login';
@@ -26,7 +25,6 @@ async function login() {
     localStorage.setItem("accessToken", accessToken);
     localStorage.setItem("refreshToken", refreshToken);
     window.location="index.html";
-    debugger;
   }
   
   
@@ -45,7 +43,7 @@ async function login() {
     // Retrieve access token from localStorage or sessionStorage
     const accessToken = localStorage.getItem("accessToken");
     if (!accessToken) {
-      return true; // Access token not found, consider it as expired
+      return false; // Access token not found, consider it as expired
     }
   
     // Decode the access token (if needed) to check its expiration time
