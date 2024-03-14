@@ -44,7 +44,7 @@ body{
     cursor: pointer;
 }
 .info_box{
-    width: 540px;
+    width: 90vw;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -96,7 +96,7 @@ body{
     transition: all 0.3s ease;
 }
 .quiz_box{
-    width: 550px;
+    width: 100vw;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);

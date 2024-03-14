@@ -9,14 +9,12 @@ function CallMe() {
     let questions_from_be = new Array();
     
     request.onload = async function () {
-        debugger;
 
        
         var data = JSON.parse(this.response);
         for (var j = 0; j < data.data.length; j++){
            
-            debugger;
-
+   
             let question = {
                 numb:  j,
                 question:  data.data[j].Question,
