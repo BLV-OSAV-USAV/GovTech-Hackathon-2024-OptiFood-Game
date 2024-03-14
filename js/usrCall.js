@@ -9,26 +9,36 @@ function CallUser() {
     request.send(); */
     
 
-    let usr_arr = []; // Initialize an empty array outside the onload function
+    let usr_arr = {}; // Initialize an empty array outside the onload function
 
     request.onload = async function () {
         var data = JSON.parse(this.response);
         for (var j = 0; j < data.data.length; j++){
+            let id =data.data[j].related_user.id;
             let usr = {
                 id: data.data[j].related_user.id, 
                 first_name: data.data[j].related_user.first_name,
                 last_name: data.data[j].related_user.last_name,
                 reached_score: data.data[j].reached_score
             };
-            usr_arr.push(usr);
+            if(usr_arr[id]==undefined)
+                usr_arr[id]=usr;
+            else{
+                usr_arr[id].reached_score= usr_arr[id].reached_score+usr.reached_score;
+            }
+
         }
-    
+        usr_arr2 =[];
+        debugger;
+        for (var user in usr_arr) {
+            usr_arr2.push(usr_arr[user]);
+        };
         // Sort users array by reached_score in descending order
-        usr_arr.sort((a, b) => b.reached_score - a.reached_score);
+        usr_arr2.sort((a, b) => b.reached_score - a.reached_score);
     
         let html = '<table>';
     
-        usr_arr.forEach((user, i) => { // Use forEach to iterate over usr_arr
+        usr_arr2.forEach((user, i) => { // Use forEach to iterate over usr_arr
             html += `
                 <tr>
                     <td class="number">${i + 1}</td>
@@ -41,8 +51,9 @@ function CallUser() {
         html += '</table>';
         
 
+        userId = getUserData().id;
 
-        document.getElementById('wlcUsr').innerHTML = 'Welcome back '+ '<i>' + usr_arr[0].first_name + '</i>';
+        document.getElementById('wlcUsr').innerHTML = 'Welcome back '+ '<i>' + usr_arr[userId].first_name + '</i>';
         document.getElementById('ranking').innerHTML = html;
 
     };
