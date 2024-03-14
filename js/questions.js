@@ -18,7 +18,7 @@ function CallMe() {
             let question = {
                 numb:  j,
                 question:  data.data[j].Question,
-                answer: data.data[j]["answer_"+data.data[j].corrected_answer],
+                answer: data.data[j]["answer_"+data.data[j].corrected_answer+1],
                 options: [
                     data.data[j].answer_1,
                     data.data[j].answer_2,
