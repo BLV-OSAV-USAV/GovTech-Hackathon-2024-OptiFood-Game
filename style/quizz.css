@@ -150,19 +150,41 @@
 .quiz_box header .time_line{
   
     height: 3px;
-    background: #1AAC9F;
+    background: #77D600;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
-footer .total_que span{
+.total_que{
+    /* Frame 138 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 14px;
+    gap: 10px;
+    margin-left:calc(50% - 188px/2); ;
+    width: 188px;
+    height: 31px;
+
+    background: #7A65FF;
+    border: 3px solid #FFFFFF;
+    border-radius: 60px;
+    margin-bottom: 40px;
+
+}
+ .total_que span{
     display: flex;
     user-select: none;
 }
-footer .total_que span p{
+ .total_que span p{
     font-weight: 500;
     padding: 0 5px;
 }
-footer .total_que span p:first-child{
+ .total_que span p:first-child{
     padding-left: 0px;
 }
 footer button{

@@ -66,7 +66,7 @@ quit_quiz.onclick = ()=>{
     window.location.href = '../index.html'; //reload to homepage
 }
 const next_btn = document.querySelector("footer .next_btn");
-const bottom_ques_counter = document.querySelector("footer .total_que");
+const bottom_ques_counter = document.querySelector(".total_que");
 // if Next Que button clicked
 next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){ //if question count is less than total question length
