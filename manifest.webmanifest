@@ -1,0 +1,13 @@
+{
+    "theme_color": "#35f654",
+    "background_color": "#f69435",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/",
+    "name": "OptiFoodChallenge",
+    "short_name": "opti",
+    "description": "The Challenge to improve ",
+    "icons": {
+        "name": "button-Healthy-eating-food-mobile_app-512.webp"
+    }
+}
