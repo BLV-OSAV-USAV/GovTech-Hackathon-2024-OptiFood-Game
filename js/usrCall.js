@@ -40,7 +40,7 @@ function CallUser() {
         usr_arr2.forEach((user, i) => { // Use forEach to iterate over usr_arr
             html += `
                 <tr>
-                    <td class="number">${i + 1}</td>
+                    <td class="number">#${i + 1}</td>
                     <td class="name">${user.first_name} ${user.last_name}</td>
                     <td class="points">${i === 0 ? user.reached_score + '<img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>' : user.reached_score}</td>
                 </tr>
