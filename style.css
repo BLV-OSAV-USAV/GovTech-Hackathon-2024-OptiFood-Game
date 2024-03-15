@@ -107,7 +107,7 @@ section .option_list .option .icon{
     pointer-events: none;
     transition: all 0.3s ease;
     line-height: 24px;
-    position: fixed;
+    
     margin-top: 30px;
     right: -80px;
 }
