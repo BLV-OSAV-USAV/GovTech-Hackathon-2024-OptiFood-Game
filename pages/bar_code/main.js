@@ -69,7 +69,6 @@ function initializeBarcodeReader() {
 
     new BarcodeReader(configuration).initialize()
         .then(barcodeReader => {
-
             // store the BarcodeReader in a global, to be able to access it later (e.g. to destroy it)
             window['barcodeReader'] = barcodeReader;
             barcodeReader.detected = (detections) => {

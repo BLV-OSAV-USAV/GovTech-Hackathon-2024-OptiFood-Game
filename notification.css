@@ -6,15 +6,7 @@
     box-sizing: border-box; /* Added box-sizing */
 }
 
-body {
-    font-family: 'SF Pro Display', sans-serif;
-    font-size: 16px;
-    color: #222;
-    background-image: url(./img/iphone-14-2560x1440-abstract-ios-16-hd-24001.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover; /* Changed background-size */
-}
+
 
 .container {
     width: 95%;
