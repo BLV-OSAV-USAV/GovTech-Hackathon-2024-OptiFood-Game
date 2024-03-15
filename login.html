@@ -3,24 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login and Sign Up</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
   </head>
   <body>
-    <div class="container">
+    <div class="login-container">
+      <form class="login-form" id="loginForm">
         <h2>Login</h2>
-        <input type="text" id="loginUsername" placeholder="Username" required />
+        <input
+          type="text"
+          id="loginUsername"
+          class="input-field"
+          placeholder="Username"
+          required
+        />
         <input
           type="password"
           id="loginPassword"
+          class="input-field"
           placeholder="Password"
           required
         />
-        <button onclick="login()">Login</button>
-
+        <button type="submit" class="login-btn">Login</button>
+        <p>
+          You should login with <br />
+          <b>username: test@text.com </b><br />
+          <b>password: 123456</b>
+        </p>
+      </form>
     </div>
-
     <script src="js/login.js"></script>
   </body>
 </html>
