@@ -1,8 +1,59 @@
 
+@font-face {
+    font-family: "Digitalt";
+    src:
+      local("../fonts/Digitalt"),
+      url("../fonts/Digitalt/Digitalt.otf") format("opentype"),
+      url("../fonts/Digitalt/Digitalt.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Play-Bold";
+    src: 
+        local("../fonts"),
+        url("../../fonts/Play-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Play-Regular";
+    src: 
+        local("../fonts"),
+        url("../../fonts/Play-Regular.ttf") format("truetype");
+}
+
 body, html {
+    position: relative;
+    height: 100%;
     width: 100%;
-    font-family: sans-serif;
+    min-height: 50vh;
+    display: flex;
     margin: 0;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FE6B6B;
+  }
+
+.instruction{
+
+    font-family: "Play-Bold";
+    justify-content: center;
+    padding: 4px 14px;
+    font-size: 1.1rem;
+
+    /* Auto layout */
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    
+    position: relative;
+    width: 70%;
+    height: auto;
+    top: 117px;
+    
+    background: #FFFFFF;
+    border-radius: 18px;
+    
 }
 
 .container {
@@ -15,6 +66,7 @@ body, html {
     width: 100%;
     height: 30%;
     background-color: black;
+    flex-direction: column;
 }
 
 #results {
@@ -23,3 +75,32 @@ body, html {
     flex-direction: column;
     gap: 10px;
 }
+
+.challenge{
+    font-family: "Digitalt", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: center;
+
+        /* Auto layout */
+    display: flex;
+    align-items: center;
+    padding: 4px 14px;
+    gap: 10px;
+
+    position: relative;
+    width: 120px;
+    height: 31px;
+    top: 76px;
+
+    background: #7A65FF;
+    border: 3px solid #FFFFFF;
+    border-radius: 60px;
+
+    
+}
+
+
