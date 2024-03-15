@@ -12,6 +12,25 @@ function addResult(codeDetection) {
     resultElement.innerHTML = codeDetection.data;
     document.getElementById('results').appendChild(resultElement);
 }
+async function loadData(code){
+
+    const url = 'https://world.openfoodfacts.org/api/v0/product/'+code.data;
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    });
+    const text = await response.text();
+    let responseJson= JSON.parse(text)
+
+    debugger;
+
+    document.getElementById("product_image").src = responseJson.product.image_url;
+    document.getElementById("score").innerText = responseJson.ingredients[0].text;
+    
+
+}
 
 /**
  * Initialize STRICH BarcodeReader and start scanning.
@@ -47,13 +66,16 @@ function initializeBarcodeReader() {
             vibration: true
         }
     };
+
+
     new BarcodeReader(configuration).initialize()
         .then(barcodeReader => {
 
             // store the BarcodeReader in a global, to be able to access it later (e.g. to destroy it)
             window['barcodeReader'] = barcodeReader;
             barcodeReader.detected = (detections) => {
-                addResult(detections[0]);
+
+                loadData(detections[0]);
             };
             barcodeReader.start().then(() => {
                 console.log(`BarcodeReader.start() succeeded`);
