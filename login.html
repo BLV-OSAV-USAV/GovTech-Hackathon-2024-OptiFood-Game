@@ -13,8 +13,8 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
   </head>
   <body>
-    <div class="login-container">
-      <form class="login-form" id="loginForm">
+    <div class="login-container ">
+      <div class="login-form">
         <h2>Login</h2>
         <input
           type="text"
@@ -30,13 +30,13 @@
           placeholder="Password"
           required
         />
-        <button type="submit" class="login-btn">Login</button>
+        <button class="login-btn" onclick="login()">Login</button>
         <p>
           You should login with <br />
           <b>username: test@test.com </b><br />
           <b>password: 123456</b>
         </p>
-      </form>
+      </div>
     </div>
     <script src="./js/login.js"></script>
   </body>
