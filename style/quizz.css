@@ -333,3 +333,66 @@ border: 0;
     background: #1AAC9F
 ;
 }
+
+.facts{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+
+    h1{
+        /* Faktencheck */
+                
+
+        position: absolute;
+        width: 161px;
+        height: 32px;
+        left: calc(50% - 161px/2 - 96.5px);
+        top: 75px;
+
+        font-family: 'Digitalt';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 32px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.5px;
+
+        color: #1C2834;
+
+
+            }
+            header{
+                margin-top: 20vh;
+                margin-left: 5vw;
+                /* Frame 23 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+
+        width: 90vw;
+        height: 236px;
+
+        background: #1AAC9F;
+        border-radius: 18px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+
+    }
+}

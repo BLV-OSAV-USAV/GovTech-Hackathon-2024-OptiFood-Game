@@ -24,7 +24,9 @@ async function CallMe() {
        
     var data =JSON.parse(text)        ;
     for (var j = 0; j < data.data.length; j++){
+        debugger;
         let question = {
+            lesson_learned:data.data[j].lesson_learned,
             numb:  j,
             question:  data.data[j].Question,
 

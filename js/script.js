@@ -68,7 +68,15 @@ restart_quiz.onclick = ()=>{
 quit_quiz.onclick = ()=>{
     window.location.href = '../index.html'; //reload to homepage
 }
-const next_btn = document.querySelector(".next_btn");
+const next_btn = document.querySelector("#next_btn");
+const close_btn = document.querySelector("#next_fact");
+close_btn.onclick = ()=>{
+    document.getElementById("facts").style.display = "none";
+
+        goNext();
+    
+   
+}
 const bottom_ques_counter = document.querySelector(".total_que");
 function goNext() {
     if(que_count < questions.length - 1){ //if question count is less than total question length
@@ -88,11 +96,21 @@ function goNext() {
         showResult(); //calling showResult function
     }
 }
+
+function displayFacts(){
+    document.getElementById("facts").style.display = "inline";
+
+}
 // if Next Que button clicked
 next_btn.onclick = ()=>{
-    goNext()
+    if(current_state_success){
+        goNext()
+    }else{
+        displayFacts();
+    }
    
 }
+
 // getting questions and options from array
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
@@ -110,6 +128,8 @@ function showQuetions(index){
     for(i=0; i < option.length; i++){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
+
+    document.getElementById("facts_text").innerHTML =questions[index].lesson_learned; 
 }
 // creating the new div tags which for icons
 let tickIconTag = '<div ></div>';
