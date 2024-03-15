@@ -4,9 +4,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 20%;
+    margin-top: 5%;
     margin-left: 5vw;
     width: 80vvw;
+    opacity: 0;
+
   
 }
 
@@ -226,11 +228,12 @@ footer button.show{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    margin-top: 20vh;
 }
 .result_box .icon{
     font-size: 100px;
     color: #1AAC9F
-;
+    margin-left: 20%;
     margin-bottom: 10px;
 }
 .result_box .complete_text{
@@ -299,7 +302,7 @@ border: 0;
 }
 
 .result_box .buttons button{
-    margin: 0 10px;
+    margin: 0 5px;
     height: 45px;
     padding: 0 20px;
     font-size: 18px;
@@ -308,9 +311,9 @@ border: 0;
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #1AAC9F
-;
+    border: 1px solid #1AAC9F;
     transition: all 0.3s ease;
+    float: left;
 }
 .buttons button.restart{
     color: #fff;

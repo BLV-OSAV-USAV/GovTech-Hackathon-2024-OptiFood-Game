@@ -11,6 +11,9 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 // if startQuiz button clicked
 
+const defaulttext = "Next Que";
+const errortext= "Faktencheck";
+var current_state_success= true;
 function startGame(){
     info_box.classList.add("activeInfo"); //show info box
     info_box.classList.remove("activeInfo"); //hide info box
@@ -67,8 +70,7 @@ quit_quiz.onclick = ()=>{
 }
 const next_btn = document.querySelector(".next_btn");
 const bottom_ques_counter = document.querySelector(".total_que");
-// if Next Que button clicked
-next_btn.onclick = ()=>{
+function goNext() {
     if(que_count < questions.length - 1){ //if question count is less than total question length
         que_count++; //increment the que_count value
         que_numb++; //increment the que_numb value
@@ -85,6 +87,11 @@ next_btn.onclick = ()=>{
         clearInterval(counterLine); //clear counterLine
         showResult(); //calling showResult function
     }
+}
+// if Next Que button clicked
+next_btn.onclick = ()=>{
+    goNext()
+   
 }
 // getting questions and options from array
 function showQuetions(index){
@@ -105,8 +112,8 @@ function showQuetions(index){
     }
 }
 // creating the new div tags which for icons
-let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
-let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
+let tickIconTag = '<div ></div>';
+let crossIconTag = '<div ></div>';
 //if user clicked on option
 function optionSelected(answer){
     clearInterval(counter); //clear counter
@@ -116,12 +123,16 @@ function optionSelected(answer){
     const allOptions = option_list.children.length; //getting all option items
     
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
+        next_btn.innerHTML= defaulttext;
+        current_state_success=true;
         userScore += 10; //upgrading score value with 1
         answer.classList.add("correct"); //adding green color to correct selected option
         answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
         console.log("Correct Answer");
         console.log("Your correct answers = " + userScore);
     }else{
+        next_btn.innerHTML= errortext;
+        current_state_success=false;
         answer.classList.add("incorrect"); //adding red color to correct selected option
         answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cross icon to correct selected option
         console.log("Wrong Answer");
@@ -136,12 +147,13 @@ function optionSelected(answer){
     for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
+    
     next_btn.classList.add("show"); //show the next button if user selected any option
 }
 function showResult(){
-    info_box.classList.remove("activeInfo"); //hide info box
+    /*info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
-    result_box.classList.add("activeResult"); //show result box
+    result_box.classList.add("activeResult"); //show result box*/
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
@@ -219,5 +231,5 @@ function PostResult(reached_score, related_user) {
         body: data,
     });
     //responseJson= JSON.parse(response).data
-    //window.location="quiz.html";
+    window.location="/index.html";
 }
