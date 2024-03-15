@@ -35,13 +35,15 @@ body, html {
   }
 
 .instruction{
-
     font-family: "Play-Bold";
-    justify-content: center;
     padding: 4px 14px;
     font-size: 1.1rem;
 
+    /* Center the text */
+    text-align: center;
+
     /* Auto layout */
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 18px;
@@ -53,8 +55,8 @@ body, html {
     
     background: #FFFFFF;
     border-radius: 18px;
-    
 }
+
 
 .container {
     height: 100vh;
@@ -67,6 +69,7 @@ body, html {
     height: 30%;
     background-color: black;
     flex-direction: column;
+    margin-top: 20%;
 }
 
 #results {
