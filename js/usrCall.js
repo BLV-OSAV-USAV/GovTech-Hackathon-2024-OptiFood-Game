@@ -1,4 +1,4 @@
-function CallUser() {
+function CallUser(userID) {
     var request = new XMLHttpRequest(); // Create a request variable and assign a new XMLHttpRequest object to it.
     // Other requests
     // https://optifood.directus.app/items/QuizzQuestion?quiz=3
@@ -10,6 +10,7 @@ function CallUser() {
     
 
     let usr_arr = {}; // Initialize an empty array outside the onload function
+
 
     request.onload = async function () {
         var data = JSON.parse(this.response);
@@ -28,7 +29,8 @@ function CallUser() {
             }
 
         }
-        usr_arr2 =[];
+        let usr_arr2 =[];
+
         for (var user in usr_arr) {
             usr_arr2.push(usr_arr[user]);
         };
@@ -38,21 +40,32 @@ function CallUser() {
         let html = '<table>';
     
         usr_arr2.forEach((user, i) => { // Use forEach to iterate over usr_arr
-            html += `
-                <tr>
-                    <td class="number">#${i + 1}</td>
-                    <td class="name">${user.first_name} ${user.last_name}</td>
-                    <td class="points">${i === 0 ? user.reached_score + '<img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>' : user.reached_score}</td>
-                </tr>
-            `;
-        });        
+            
+            if (user.id === userID.id && (i + 1) !== 1) { // Check if user ID matches the connected user's ID and it's not the first row
+                html +=
+                    `
+                    <tr class='highlight'>
+                        <td class="number">#${i + 1}</td>
+                        <td class="name">${user.first_name} ${user.last_name}</td>
+                        <td class="points">${i === 0 ? user.reached_score + '<img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>' : user.reached_score}</td>
+                    </tr>
+                `;
+            } else {
+                html += `
+                    <tr>
+                        <td class="number">#${i + 1}</td>
+                        <td class="name">${user.first_name} ${user.last_name}</td>
+                        <td class="points">${i === 0 ? user.reached_score + '<img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>' : user.reached_score}</td>
+                    </tr>
+                `;
+            }
+        });
+             
     
         html += '</table>';
+        console.log(html);
         
 
-        userId = getUserData().id;
-
-        document.getElementById('wlcUsr').innerHTML = 'Welcome back '+ '<i>' + usr_arr[userId].first_name + '</i>';
         document.getElementById('ranking').innerHTML = html;
 
     };
@@ -61,7 +74,7 @@ function CallUser() {
 
 userID = getUserData();
 if(userID!=false){
-    CallUser()
+    CallUser(userID)
 }else{
     window.location="login.html"
 }
