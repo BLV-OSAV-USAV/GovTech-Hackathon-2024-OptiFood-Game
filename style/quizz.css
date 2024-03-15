@@ -179,6 +179,7 @@
 
 .total_que{
     /* Frame 138 */
+    font-family: "Play-Bold";
 
     /* Auto layout */
     display: flex;
@@ -238,6 +239,7 @@ footer button.show{
     transform: scale(1);
 }
 .result_box{
+    font-family: "Play-Bold";
     background: #fff;
     border-radius: 5px;
     display: flex;
@@ -324,6 +326,7 @@ border: 0;
 }
 
 .result_box .buttons button{
+    font-family: "Play-Bold";
     margin: 0 5px;
     height: 45px;
     padding: 0 20px;
