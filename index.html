@@ -6,7 +6,10 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+      <script src="/js/notification.js"></script>
       <link rel="stylesheet" href="./style/home.css">
+      <link rel="stylesheet" href="notification.css">
       <link rel="manifest" href="./manifest.webmanifest" />
       <link rel="icon" type="image/x-icon" href="/img/favicon.png">
       <link
@@ -15,9 +18,35 @@
       />
     </head>
     <body>
+
+        <div class="container">
+            <div class="push__wrapper">
+                <div class="push__box">
+                    <div class="push__content">
+                        <div class="push__top">
+                            <div class="col">
+                                <div class="push__imgwrap">
+                                    <img class="push__icon" src="./img/favicon.png" alt="logo">
+                                </div>
+                                <span class="push__title">Optifood: <a href="/pages/quiz.html">Start Challenge</a></span>
+                            </div>
+                            <div class="col">
+                                <div class="push__time">now</div>
+                            </div>
+                        </div>
+                        <div class="push__main">
+                            <div class="push__person">Elias Medawar</div>
+                            <p>New challenge has arrived </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       <header>
+
         <img src="/img/app-background.png" class="background-image">
       </header>
+
       <main>
         <div id="header">
           <h1>Leaderboard</h1>
