@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     margin-top: 20%;
-    margin-left: 10vw;
+    margin-left: 5vw;
     width: 80vvw;
   
 }
@@ -84,9 +84,7 @@
 ;
     transition: all 0.3s ease;
 }
-.quiz_box{
 
-}
 
 .quiz_box header{
   
@@ -99,7 +97,7 @@
     padding: 16px 22px 19px;
     gap: 18px;
 
-    width: 354px;
+    width: 90vw;
     height: 105px;
 
     background: #FFFFFF;
@@ -220,11 +218,11 @@ footer button.show{
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
-    width: 450px;
+    width: 80vw;
+    margin-left: 10vw;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -249,10 +247,57 @@ footer button.show{
     padding: 0 4px;
     font-weight: 600;
 }
-.result_box .buttons{
-    display: flex;
-    margin: 20px 0;
+.next_btn{
+   /* button
+
+Filled buttons are high-emphasis buttons.
+They have the most visual impact after the FAB, and should be used for important, final actions that complete a flow, like &quot;Save&quot;, &quot;Join now&quot;, or &quot;Confirm&quot;.
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 26px 22px;
+gap: 4px;
+
+position: absolute;
+width: 201px;
+height: 63px;
+left: calc(50% - 201px/2 + 76.5px);
+bottom: 20px;
+
+background: #FE99AC;
+/* Button Shadow */
+box-shadow: 0px 4px 15px rgba(254, 153, 172, 0.5), inset 0px -6px 0px 2px #B36C79;
+border-radius: 30px;
+/* label-text */
+
+
+font-family: 'Digitalt';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 25px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.015em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+border: 0;
+
+
 }
+
 .result_box .buttons button{
     margin: 0 10px;
     height: 45px;
