@@ -91,7 +91,7 @@ function initializeBarcodeReader() {
 /**
  * Initialize STRICH SDK, and if successful, proceed to initialize BarcodeReader.
  */
-StrichSDK.initialize('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNjIxOWJmZi02N2VmLTRmYWYtOWYyZS0yNGU0ZDhjOWI5ZDEiLCJpc3MiOiJzdHJpY2guaW8iLCJhdWQiOlsiaHR0cHM6Ly9vcHRpZm9vZGdhbWUuY2gvbG9naW4uaHRtbCJdLCJpYXQiOjE3MTA0OTAyMjIsIm5iZiI6MTcxMDQ5MDIyMiwiY2FwYWJpbGl0aWVzIjp7fSwidmVyc2lvbiI6MX0.5zOZzyojzz3lbUkjKVAIqZ_6v8r1lXf5VPb2bYKyL8I')
+StrichSDK.initialize('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MWY1ODUyMi1iZmVmLTQ0ZmMtODQxMC0wM2VlMmFhY2VlZWYiLCJpc3MiOiJzdHJpY2guaW8iLCJhdWQiOlsiaHR0cHM6Ly9vcHRpZm9vZGdhbWUuY2giXSwiaWF0IjoxNzEwNDkzODIxLCJuYmYiOjE3MTA0OTM4MjEsImNhcGFiaWxpdGllcyI6e30sInZlcnNpb24iOjF9.-EyZQIC_xxsHKlqHDCOMbWYUb5vJHoT1_gvgSADg2Xg')
     .then(() => {
         initializeBarcodeReader();
     })
