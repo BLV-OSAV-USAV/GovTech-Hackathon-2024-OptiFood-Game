@@ -1,4 +1,24 @@
 
+@font-face {
+    font-family: "Digitalt";
+    src:
+      local("../fonts/Digitalt"),
+      url("../fonts/Digitalt/Digitalt.otf") format("opentype"),
+      url("../fonts/Digitalt/Digitalt.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Play-Bold";
+    src: 
+        local("../fonts"),
+        url("../../fonts/Play-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Play-Regular";
+    src: 
+        local("../fonts"),
+        url("../../fonts/Play-Regular.ttf") format("truetype");
+}
 
 .quiz_box{
     position: absolute;
