@@ -16,7 +16,7 @@ body{
 ;
 }
 section{
-    padding: 25px 30px 20px 30px;
+    padding: 25px 30px 100px 30px;
     background: #fff;
     position: fixed;
     bottom: 0;
@@ -36,6 +36,7 @@ section .que_text{
 section .option_list{
     padding: 20px 0px;
     display: block;   
+    position: relative;
 }
 section .option_list .option{
    
@@ -52,7 +53,7 @@ section .option_list .option{
     box-shadow: 0px 6px 0px #FE99AC;
     border-radius: 18px;
 
-    padding: 10%;
+    padding:15px;
     float: left;
     margin-bottom: 30px;
     margin-right: 2vw;
@@ -85,6 +86,13 @@ section .option_list .option.incorrect{
     color: #721c24;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
+
+
+background: #FF6565;
+border: 3px solid #993D3D;
+box-shadow: 0px 6px 0px #993D3D;
+border-radius: 18px;
+
 }
 section .option_list .option.disabled{
     pointer-events: none;
@@ -99,6 +107,9 @@ section .option_list .option .icon{
     pointer-events: none;
     transition: all 0.3s ease;
     line-height: 24px;
+    position: fixed;
+    margin-top: 30px;
+    right: -80px;
 }
 .option_list .option .icon.tick{
     color: #23903c;

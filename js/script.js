@@ -65,7 +65,7 @@ restart_quiz.onclick = ()=>{
 quit_quiz.onclick = ()=>{
     window.location.href = '../index.html'; //reload to homepage
 }
-const next_btn = document.querySelector("footer .next_btn");
+const next_btn = document.querySelector(".next_btn");
 const bottom_ques_counter = document.querySelector(".total_que");
 // if Next Que button clicked
 next_btn.onclick = ()=>{
@@ -218,6 +218,6 @@ function PostResult(reached_score, related_user) {
         },
         body: data,
     });
-    responseJson= JSON.parse(response).data
-    window.location="quiz.html";
+    //responseJson= JSON.parse(response).data
+    //window.location="quiz.html";
 }
