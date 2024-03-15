@@ -24,7 +24,6 @@ async function loadData(code){
     const text = await response.text();
     let responseJson= JSON.parse(text)
 
-    debugger;
 
     document.getElementById("product_image").src = responseJson.product.image_url;
     document.getElementById("score").innerText = responseJson.ingredients[0].text;
