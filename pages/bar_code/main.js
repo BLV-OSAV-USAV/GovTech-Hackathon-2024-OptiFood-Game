@@ -12,6 +12,25 @@ function addResult(codeDetection) {
     resultElement.innerHTML = codeDetection.data;
     document.getElementById('results').appendChild(resultElement);
 }
+async function loadData(code){
+
+    const url = 'https://world.openfoodfacts.org/api/v0/product/'+code.data;
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    });
+    const text = await response.text();
+    let responseJson= JSON.parse(text)
+
+    debugger;
+
+    document.getElementById("product_image").src = responseJson.product.image_url;
+    document.getElementById("score").innerText = responseJson.ingredients[0].text;
+    
+
+}
 
 /**
  * Initialize STRICH BarcodeReader and start scanning.
@@ -47,13 +66,16 @@ function initializeBarcodeReader() {
             vibration: true
         }
     };
+
+
     new BarcodeReader(configuration).initialize()
         .then(barcodeReader => {
 
             // store the BarcodeReader in a global, to be able to access it later (e.g. to destroy it)
             window['barcodeReader'] = barcodeReader;
             barcodeReader.detected = (detections) => {
-                addResult(detections[0]);
+
+                loadData(detections[0]);
             };
             barcodeReader.start().then(() => {
                 console.log(`BarcodeReader.start() succeeded`);
@@ -69,7 +91,7 @@ function initializeBarcodeReader() {
 /**
  * Initialize STRICH SDK, and if successful, proceed to initialize BarcodeReader.
  */
-StrichSDK.initialize('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNjIxOWJmZi02N2VmLTRmYWYtOWYyZS0yNGU0ZDhjOWI5ZDEiLCJpc3MiOiJzdHJpY2guaW8iLCJhdWQiOlsiaHR0cHM6Ly9vcHRpZm9vZGdhbWUuY2gvbG9naW4uaHRtbCJdLCJpYXQiOjE3MTA0OTAyMjIsIm5iZiI6MTcxMDQ5MDIyMiwiY2FwYWJpbGl0aWVzIjp7fSwidmVyc2lvbiI6MX0.5zOZzyojzz3lbUkjKVAIqZ_6v8r1lXf5VPb2bYKyL8I')
+StrichSDK.initialize('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MWY1ODUyMi1iZmVmLTQ0ZmMtODQxMC0wM2VlMmFhY2VlZWYiLCJpc3MiOiJzdHJpY2guaW8iLCJhdWQiOlsiaHR0cHM6Ly9vcHRpZm9vZGdhbWUuY2giXSwiaWF0IjoxNzEwNDkzODIxLCJuYmYiOjE3MTA0OTM4MjEsImNhcGFiaWxpdGllcyI6e30sInZlcnNpb24iOjF9.-EyZQIC_xxsHKlqHDCOMbWYUb5vJHoT1_gvgSADg2Xg')
     .then(() => {
         initializeBarcodeReader();
     })
