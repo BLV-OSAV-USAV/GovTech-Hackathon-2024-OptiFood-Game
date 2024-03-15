@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App | CodingNepal</title>
+    <link rel="stylesheet" href="../style/styleScanner.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div > <video id="test-area-qr-code-webcam" ></video>  </div>
+    
+   
+    <script type="text/javascript" src="https://unpkg.com/@zxing/browser@latest"></script>
+    <script type="text/javascript">
+        async function scan(){
+            
+            const codeReader = new ZXingBrowser.BrowserQRCodeReader();
+
+            const videoInputDevices = await ZXingBrowser.BrowserCodeReader.listVideoInputDevices();
+
+            // choose your media device (webcam, frontal camera, back camera, etc.)
+            const selectedDeviceId = videoInputDevices[0].deviceId;
+
+            console.log(`Started decode from camera with id ${selectedDeviceId}`);
+
+            const previewElem = document.getElementById('#test-area-qr-code-webcam');
+            debugger
+            // you can use the controls to stop() the scan or switchTorch() if available
+            const controls = await codeReader.decodeFromVideoDevice(selectedDeviceId, previewElem, (result, error, controls) => {
+            // use the result and error values to choose your actions
+            // you can also use controls API in this scope like the controls
+            // returned from the method.
+            debugger;
+            });
+
+            // stops scanning after 20 seconds
+            setTimeout(() => controls.stop(), 20000);
+
+        }
+        window.addEventListener('load', () => {
+            debugger;
+            scan();
+        });
+    </script>
+</body>
+</html>
+</html>
